@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Acces Interzis";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <h1 class="text-danger" style="font-size: 5rem;"><i class="bi bi-shield-lock-fill"></i></h1>
+            <h2 class="text-danger fw-bold mt-3">Eroare 403 - Acces Interzis</h2>
+            <hr />
+            <p class="lead mt-4 text-muted">
+                Ne pare rău, dar nu ai permisiunea necesară pentru a accesa această pagină sau resursă.
+            </p>
+            <p class="text-secondary">
+                Dacă încerci să modifici sau să ștergi un articol, asigură-te că ești proprietarul acestuia sau că ai drepturi de administrator.
+            </p>
+            
+            <a asp-controller="Articles" asp-action="Index" class="btn btn-outline-primary mt-4">
+                Înapoi la Pagina Principală
+            </a>
+        </div>
+    </div>
+</div>
